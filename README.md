@@ -55,6 +55,47 @@ Produces a clear list showing:
 
 1.Each word pair (bigram)
 
+This code analyzes groups of three consecutive words (trigrams) in the comments to identify the most common three-word phrases. For example, it can find patterns like "group helpline sidebars" or "support looking resources" that appear frequently in discussions.
+
+This component of the project focuses on cleaning and standardizing text data from ""Domestic Violence"" and ""Abusive Relationship"" forum comments. It transforms raw text into a standardized format suitable for analysis by removing unnecessary elements and normalizing the text.
+
+Required Tools: The process uses the Natural Language Toolkit (NLTK) for text processing, including:
+
+1.Word tokenization (breaking text into words).
+
+2.Stop words removal (removing common words).
+
+3.Lemmatization (reducing words to their base form).
+
+This documentation describes a Python script designed to analyze text data from comments, specifically focusing on word frequency analysis and visualization. The script processes comments from a CSV file, identifies the most frequently occurring words, and creates both numerical and visual representations of the findings.
+
+Then  calculates the length of comments in the dataset to understand their distribution. Using the cleaned and filtered dataset 'abusiverelation_domesticviolence_comments_cleaned_filtered.csv', a new column named 'comment_length' is added, which contains the character count of each comment. Missing values in the 'comment_body' column are replaced with empty strings to ensure accurate computation. Statistical metrics such as the mean, minimum, maximum, and quartiles of comment lengths are then computed and displayed, providing insights into the variability and typical length of comments within the dataset.
+
+ program analyzes how long comments are in a dataset from what appears to be a domestic violence support forum. It processes all comments from a CSV file and measures the length of each comment (counting the number of characters). The analysis helps understand how detailed or brief people's comments typically are in these discussions.
+
+The program creates a visual representation of this data through a histogram, which shows how comment lengths are distributed. The histogram uses sky blue bars with black edges to make it easy to read, and displays how many comments fall into different length ranges. Additionally, it calculates basic statistical information about the comments, such as the average length, the shortest and longest comments, and how much the lengths vary. This information helps understand typical patterns in how people communicate in these support forums. The results are saved as a PDF file for future reference and further analysis.
+
+The analysis begins by gathering information about each author's activity in the dataset. The program counts how many comments each unique author has posted, creating a complete record of posting frequency for every author in the system. This gives us the raw data about who posts and how often they contribute.
 2.How many times it appears
+
+This program performs a focused analysis of author participation patterns in the dataset. It first counts how many different authors (unique users) have posted comments, providing a clear picture of the community's size. Then, it goes a step further by creating a detailed mapping of each author's contribution.
+
+Then identifying and examining the most active participants in the community by organizing authors based on their comment volumes. The program takes all author-comment pairs and sorts them in descending order based on the number of comments each author has made, effectively ranking authors from most to least active. It then zooms in on the top 50 most prolific authors, creating a focused view of the community's most engaged members. For each of these top contributors, the program displays their username and their total number of comments, providing a clear picture of who the most active participants are and exactly how much they've contributed to the community discussion. This information is valuable for understanding the core group of users who drive most of the community's conversations and activity.
+
+This analysis creates a visual representation of the most active participants' contributions in the community. The program selects the top 50 authors based on their comment counts and generates a bar chart to display their activity levels. 
+
+This program creates a comprehensive visual representation of word usage patterns in comments by generating a word cloud visualization.
+
+**Sentiment Analysis and Text Processing of Support Forum Comments**
+
+Analysis of GPT's Classification of Comments Related to Abusive Relationships
+
+Automated Detection of Abusive Relationship Comments Using Naive Bayes Classification
+
+Identifying Abuse-Related Comments Using Logistic Regression Analysis
+
+Identifying Abuse-Related Comments Using Support Vector Machine Analysis
+
+
 
 3.Listed in order from most to least frequent
