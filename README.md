@@ -31,3 +31,30 @@ Output Generation:
 2.Preserved comment context.
 
 3.Ready for further natural language processing.
+
+
+This code analyzes pairs of words (bigrams) in comments to find the most frequently occurring word combinations. For example, it can identify that phrases like "sexual violence" or "support groups" appear frequently in the text.
+
+Methodology:
+
+Step 1:Data Preparation
+
+Takes the comments from our dataset and remove any empty or missing comments. Converts all text to proper string format for analysis.
+
+Step 2:Setting Up the Analysis
+
+Uses a tool called CountVectorizer to find word pairs then removes common English words (like "the", "and", "is") that don't add meaningful information. Specifically looks for pairs of words (bigrams) rather than single words.
+
+Step 3:Counting and Sorting
+
+Counts how many times each word pair appears in all comments and creates a list of all word pairs with their counts.Sorts them from most frequent to least frequent and keeps the top 20 most common word pairs
+
+Output Generation:
+
+Produces a clear list showing:
+
+1.Each word pair (bigram)
+
+2.How many times it appears
+
+3.Listed in order from most to least frequent
